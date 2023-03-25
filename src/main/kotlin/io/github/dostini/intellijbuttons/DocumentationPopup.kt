@@ -7,8 +7,8 @@ import com.intellij.openapi.actionSystem.AnActionEvent
 class DocumentationPopup : ActionGroup() {
     override fun getChildren(e: AnActionEvent?): Array<AnAction> {
         return arrayOf(
-            DocumentationLinkButton("React", "https://react.org"),
-            DocumentationLinkButton("Svelte", "https://svelte.kit"),
+            DocumentationLinkButton(DocumentationItem("React", "https://legacy.reactjs.org/docs/getting-started.html")),
+            DocumentationLinkButton(DocumentationItem("SvelteKit", "https://kit.svelte.dev/docs/introduction")),
         )
     }
 }

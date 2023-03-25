@@ -12,7 +12,7 @@ class DocumentationButton: AnAction() {
                 "Documentation Pages",
                 DocumentationPopup(),
                 e.dataContext,
-                JBPopupFactory.ActionSelectionAid.SPEEDSEARCH,
+                JBPopupFactory.ActionSelectionAid.MNEMONICS,
                 true)
             .showInFocusCenter()
     }
